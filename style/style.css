@@ -175,6 +175,7 @@ section .doctor {
     bottom: 812px;
     left: 830px;
     display: inline;
+    opacity: 0.3;
 }
 
 /* Main Section */
