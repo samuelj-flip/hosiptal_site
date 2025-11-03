@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: lightblue;
+    padding: 2px 100px;
+    box-sizing: border-box;
+    height: auto;
+}
+
+/* Flex Nav */
+header .flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .flex-container .logo h3 {
+    /* Logo */
+    color: blue;
+}
+
+header .flex-container nav ul {
+    /* Flex the nav */
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+header .flex-container nav ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+header .flex-container nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+header .flex-container .btn-inline {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+header .flex-container .btn-inline a {
+    display: block;
+    text-decoration: none;
+}
+
+header .flex-container .btn-inline .btn-login a {
+    color: #222;
+    border: 1px solid blue;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+}
+
+header .flex-container .btn-inline .btn-sign a {
+    color: #fff;
+    background-color: blue;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: 80px;
+    text-align: center;
+    font-weight: light;
+    cursor: pointer;
+}
+
+/* Hero Section */
+header .hero .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+    padding: 10px;
+}
+
+header .hero .grid-container .grid-item {
+    width: 500px;
+}
+
+header .hero .grid-container .grid-item p {
+    font-size: small;
+}
+
+header .hero .grid-container .grid-item input {
+    width: 500px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 20px;
+}
+
+header .hero .grid-container .grid-item .semi-circle {
+    width: 200px;
+    background-color: rgba(84, 84, 233, 0.616);
+    height: 200px;
+}
+
+section .header-bottom .flex-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    box-sizing: border-box;
+    padding: 15px 100px;
+    background-color: blue;
+    color: #fff;
+}
+
+section .header-bottom .flex-container .flex-item {
+    text-align: center;
+    border-right: 1px solid #fff;
+    padding: 2px 20px;
+    box-sizing: border-box;
+    height: 100px;
+}
+
+section .header-bottom .flex-container .flex-item p {
+    font-size: 15px;
+}
+
+/* Mr Micheal Work and Correction */
+section .header-bottom .flex-container .flex-item div:last-child {
+    position: relative;
+    bottom: 10px;
+}
+
+/* Style the Image Later */
+
+/* Main Section */
+.main-section {
+    padding: 50px;
+    position: relative;
+    bottom: 50px;
+}
+
+.main-section .grid-container {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+}
+
+.main-section .grid-container .card {
+    width: 300px;
+    height: auto;
+    position: relative;
+    bottom: 20px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-sizing: border-box;
+    padding: 20px 50px;
+    border-radius: 20px;
+    line-height: 0.9;
+}
+
+.grid-container2 {
+    display: flex;
+    margin-top: 30px;
+}
+
+.grid-container2 .item .img{
+    width: 700px;
+    height: 300px;
+    background-color: #8a8a8b;
+    border-radius: 20px;
+}
+
+.grid-container2 .item .rem {
+    padding: 20px;
+}
+
+.grid-container2 .item .rem ul li {
+    line-height: 2;
+    list-style: circle;
+}
+
+.grid-container2 .item .link {
+    padding: 10px 50px;
+}
+
+.grid-container2 .item .link a {
+    text-decoration: none;
+    color: #333;
+}
