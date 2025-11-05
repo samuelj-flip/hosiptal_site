@@ -5,6 +5,7 @@ body {
     background-color: #fff;
     box-sizing: border-box;
     height: 100vh;
+    overflow-x: hidden;
 }
 
 /* Header */
@@ -89,7 +90,7 @@ header .hero .grid-container {
 }
 
 header .hero .grid-container .grid-item {
-    width: 500px;
+    width: 670px;
 }
 
 header .hero .grid-container .grid-item h1 {
@@ -100,23 +101,29 @@ header .hero .grid-container .grid-item h1 span {
     color: blue;
 }
 
-header .hero .grid-container .grid-item p {
+header .hero .grid-container .grid-item .txt {
     font-size: 12px;
-    width: 800px;
+    display: inline;
 }
 
-header .hero .grid-container .grid-item input {
+header .hero .grid-container .grid-item .input {
     width: 600px;
-    padding: 15px;
+    padding: 20px;
     box-sizing: border-box;
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
     position: relative;
     top: 25px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
 }
 
-header .hero .grid-container .grid-item input:focus {
-    outline: none;
+header .hero .grid-container .grid-item .input a {
+    text-decoration: none;
+    color: #222;
+    font-size: 0.9rem;
 }
 
 header .hero .grid-container .grid-item .semi-circle {
@@ -128,6 +135,7 @@ header .hero .grid-container .grid-item .semi-circle {
     position: relative;
     top: 40px;
     bottom: 20px;
+    right: 10px;
 }
 
 section .header-bottom {
@@ -173,7 +181,7 @@ section .doctor {
     z-index: 5;
     position: relative;
     bottom: 748px;
-    left: 850px;
+    left: 920px;
     display: inline;
 }
 
@@ -185,7 +193,7 @@ section .doctor img {
 
 /* Main Section */
 .main-section {
-    padding: 50px;
+    padding: 20px;
     position: relative;
     bottom: 755px;
     z-index: 3;
@@ -202,6 +210,7 @@ section .doctor img {
 .main-section .grid-container .card {
     width: 300px;
     height: auto;
+    margin-top: 20px;
     position: relative;
     bottom: 20px;
     border: none;
@@ -214,17 +223,19 @@ section .doctor img {
 
 .grid-container2 {
     display: flex;
-    margin-top: 100px;
+    margin-top: 10px;
     position: relative;
     right: 80px;
+    padding: 10px 80px;
 }
 
 .grid-container2 .item .img {
     width: 700px;
     height: 300px;
-    background-image: url(/asset/image/doctors_pic2.PNG);
+    background-image: url(../asset/image/doctors_pic2.PNG);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
     border-radius: 20px;
 }
 
