@@ -47,6 +47,10 @@ header .flex-container nav ul li a {
     color: #000;
 }
 
+header .flex-container nav ul li a:hover {
+    text-decoration: underline;
+}
+
 header .flex-container .btn-inline {
     display: flex;
     gap: 10px;
@@ -69,6 +73,10 @@ header .flex-container .btn-inline .btn-login a {
     cursor: pointer;
 }
 
+header .flex-container .btn-inline a:hover{
+    background-color: rgba(90, 162, 255, 0.8);
+}
+
 header .flex-container .btn-inline .btn-sign a {
     color: #fff;
     background-color: blue;
@@ -79,6 +87,10 @@ header .flex-container .btn-inline .btn-sign a {
     text-align: center;
     font-weight: light;
     cursor: pointer;
+}
+
+header .flex-container .btn-inline .btn-sign a:hover{
+    background-color: rgba(0, 0, 255, 0.3);
 }
 
 /* Hero Section */
@@ -219,6 +231,12 @@ section .doctor img {
     padding: 20px 50px;
     border-radius: 20px;
     line-height: 0.9;
+}
+
+.main-section .grid-container .card:hover{
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    cursor: default;
 }
 
 .grid-container2 {
