@@ -73,7 +73,7 @@ header .flex-container .btn-inline .btn-login a {
     cursor: pointer;
 }
 
-header .flex-container .btn-inline a:hover{
+header .flex-container .btn-inline a:hover {
     background-color: rgba(90, 162, 255, 0.8);
 }
 
@@ -89,7 +89,7 @@ header .flex-container .btn-inline .btn-sign a {
     cursor: pointer;
 }
 
-header .flex-container .btn-inline .btn-sign a:hover{
+header .flex-container .btn-inline .btn-sign a:hover {
     background-color: rgba(0, 0, 255, 0.3);
 }
 
@@ -120,7 +120,7 @@ header .hero .grid-container .grid-item .txt {
 
 header .hero .grid-container .grid-item .input {
     width: 600px;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
     border: none;
     border-radius: 30px;
@@ -129,6 +129,7 @@ header .hero .grid-container .grid-item .input {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2), 0 6px 8px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -136,6 +137,39 @@ header .hero .grid-container .grid-item .input a {
     text-decoration: none;
     color: #222;
     font-size: 0.9rem;
+    display: inline-block;
+}
+
+header .hero .grid-container .grid-item .input .flex a .fa-user{
+    color: #fff;
+    background-color: #222;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 15px;
+}
+
+header .hero .grid-container .grid-item .input .flex:hover{
+    background-color: rgba(69, 156, 156,0.2);
+    border-radius: 30px;
+    border: none;
+}
+
+header .hero .grid-container .grid-item .input a:hover {
+    color: rgb(75, 163, 192);
+}
+
+header .hero .grid-container .grid-item .input a .icon {
+    border-radius: 50%;
+    background-color: blue;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+header .hero .grid-container .grid-item .input a .icon:hover {
+    background-color: rgb(69, 156, 156);
+    color: #fff;
 }
 
 header .hero .grid-container .grid-item .semi-circle {
@@ -233,9 +267,17 @@ section .doctor img {
     line-height: 0.9;
 }
 
-.main-section .grid-container .card:hover{
+.main-section .grid-container .card i {
+    color: rgb(92, 92, 241);
+    background-color: rgba(173, 216, 230, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.main-section .grid-container .card:hover {
     transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     cursor: default;
 }
 
@@ -263,7 +305,16 @@ section .doctor img {
 
 .grid-container2 .item .rem ul li {
     line-height: 2;
-    list-style: circle;
+    list-style: none;
+}
+
+.grid-container2 .item .rem .list {
+    position: relative;
+    right: 35px;
+}
+
+.grid-container2 .item .rem ul li::before{
+    content: '✓ ';
 }
 
 .grid-container2 .item .link {
@@ -275,4 +326,82 @@ section .doctor img {
     color: #333;
 }
 
-/* Responsive */
+.grid-container2 .item .link a:hover{
+    text-decoration: underline;
+    color: #888;
+}
+
+section footer .flex-container {
+    border-top: 1px solid lightblue;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+}
+
+section footer .flex-container .logo h2 {
+    color: blue;
+}
+
+section footer nav ul {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+section footer nav ul li {
+    text-decoration: none;
+    list-style: none;
+}
+
+section footer nav ul li a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
+section footer nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section footer .contacts .media {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    bottom: 10px;
+}
+
+section footer .contacts .media a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #000;
+}
+
+section footer .contacts .media a:hover {
+    text-decoration: underline;
+}
+
+section footer .contacts .media .phone-no {
+    border-left: 1px solid #333;
+    padding-left: 10px;
+}
+
+section footer .icon {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    bottom: 10px;
+}
+
+section footer .icon .fab {
+    color: blue;
+    font-size: 20px;
+}
+
+section footer .icon a .fab:hover {
+    color: rgba(84, 84, 233, 0.616);
+    cursor: pointer;
+}
